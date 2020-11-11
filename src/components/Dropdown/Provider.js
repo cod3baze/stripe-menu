@@ -27,7 +27,10 @@ export function DropdownProvider({ children }) {
     })));
   }, [setOptions]);
 
-  const getOptionById = useCallback((id) => options.find((item) => item.id === id), [options]);
+  const getOptionById = useCallback(
+    (id) => options.find((item) => item.id === id),
+    [options],
+  );
 
   const deleteOptionById = useCallback((id) => {
     setOptions((items) => items.filter((item) => item.id !== id));

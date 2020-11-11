@@ -2,7 +2,7 @@ import React from 'react';
 
 // COMPONENTS
 import { Products, Developers, Company } from '../Content';
-import { DropdownOption, DropdownProvider } from '../Dropdown';
+import { DropdownOption, DropdownProvider, DropdownRoot } from '../Dropdown';
 // STATIC
 import { Container, DropdownStyles } from './styles';
 
@@ -22,6 +22,8 @@ const Navbar = () => (
           </li>
         </ul>
       </Container>
+
+      <DropdownRoot />
     </DropdownStyles>
   </DropdownProvider>
 );

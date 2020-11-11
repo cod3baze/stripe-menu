@@ -23,6 +23,7 @@
       "import/prefer-default-export": "off",
       "no-param-reassign": "off",
       "consistent-return": "off",
-      "no-plusplus": "off"
+      "no-plusplus": "off",
+      "no-unused-vars": "off"
     }
 }
